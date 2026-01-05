@@ -1,8 +1,7 @@
 import { Check, VolumeOff, VolumeUp } from '@mui/icons-material';
 import { Box, Button, Container, IconButton, Typography } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
-import odooVideo from '/Users/lakshaykhatri/Desktop/SarthakPr/LAND/client/src/content/Odoo CRM .mov';
-
+import odooVideo from '../content/Odoo CRM .mov'
 const CRM = () => {
   // CTA section role animation
   const ctaRoles = ['CRM','pipeline','relationships','leads','customers','data','follow-ups'];

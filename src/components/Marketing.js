@@ -1,8 +1,7 @@
 import { Check, VolumeOff, VolumeUp } from '@mui/icons-material';
 import { Box, Button, Container, IconButton, Typography } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
-import odooVideo from '/Users/lakshaykhatri/Desktop/SarthakPr/LAND/client/src/content/Odoo Marketing.mov';
-
+import odooVideo from '../content/Odoo Marketing.mov';
 const Marketing = () => {
   // CTA section role animation
   const ctaRoles = ['marketing','campaigns','growth','demand','acquisition','performance','engagement'];

@@ -1,7 +1,7 @@
 import { Check, VolumeOff, VolumeUp } from '@mui/icons-material';
 import { Box, Button, Container, IconButton, Typography } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
-import odooVideo from '/Users/lakshaykhatri/Desktop/SarthakPr/LAND/client/src/content/Odoo Inventory.mov';
+import odooVideo from '../content/Odoo Inventory.mov'
 
 const Inventory = () => {
   // CTA section role animation
