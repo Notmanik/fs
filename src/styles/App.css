@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Animation for page transitions */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+/* Add these styles to your existing App.css */
+
+/* Client Logos Section */
+.client-logos {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.client-logos h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.client-logos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.client-logo {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .client-logos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .client-logo {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-logos {
+    padding: 3rem 0;
+  }
+  
+  .client-logos h2 {
+    font-size: 1.8rem;
+  }
+  
+  .client-logo {
+    max-width: 100px;
+  }
+}
+
+
+/* Add these styles to your existing App.css */
+
+/* Services Section */
+.services-section {
+  background-color: #121212;
+  color: white;
+  padding: 5rem 0;
+}
+
+.service-card {
+  height: 100%;
+  transition: all 0.3s ease;
+  background-color: #1E1E1E;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: #00F0FF;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00F0FF;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  color: #00F0FF;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+.service-link-arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-link-arrow {
+  transform: translateX(5px);
+}
