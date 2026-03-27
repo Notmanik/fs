@@ -102,7 +102,12 @@ export default function HowItWorks() {
       const rect = wrapper.getBoundingClientRect();
       const total = wrapper.offsetHeight - window.innerHeight;
       const scrolled = -rect.top;
-      if (scrolled >= 0 && scrolled <= total) update(scrolled / total);
+      
+      let progress = scrolled / total;
+      if (progress < 0) progress = 0;
+      if (progress > 1) progress = 1;
+      
+      update(progress);
     }
     window.addEventListener('scroll', onScroll, { passive: true });
     update(0);

@@ -153,6 +153,14 @@ const Header = () => {
               </Box>
             </Box>
 
+            <Button 
+              component={Link} 
+              to="/ctv" 
+              color="inherit" 
+              sx={{ color: 'white', textTransform: 'none', fontSize: '1rem' }}
+            >
+              CTV
+            </Button>
             
             <Button 
               color="inherit" 
