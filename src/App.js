@@ -13,7 +13,7 @@ import Sales from './components/Sales';
 import Inventory from './components/Inventory';
 import Marketing from './components/Marketing';
 import Contact from './components/Contact';
-
+import CTVApp from './pages/CTV/CTVApp';
 
 const theme = createTheme({
   palette: {
@@ -41,28 +41,29 @@ function App() {
       <CssBaseline />
       <Router>
         <div className="App">
-          <Header />
-          <main>
             <Routes>
               <Route
                 path="/"
                 element={
                   <>
-                    <Hero />
-                    <Services />
-                    <PricingSlider />
+                    <Header />
+                    <main>
+                      <Hero />
+                      <Services />
+                      <PricingSlider />
+                    </main>
+                    <Footer />
                   </>
                 }
               />
-              <Route path="/accounting" element={<Mailing />} />
-              <Route path="/crm" element={<CRM/>} />
-              <Route path="/sales" element={<Sales/>} />
-              <Route path="/inventory" element={<Inventory/>} />
-              <Route path="/marketing" element={<Marketing/>} />
-              <Route path="/contact" element={<Contact/>} />
+              <Route path="/accounting" element={<><Header /><main><Mailing /></main><Footer /></>} />
+              <Route path="/crm" element={<><Header /><main><CRM/></main><Footer /></>} />
+              <Route path="/sales" element={<><Header /><main><Sales/></main><Footer /></>} />
+              <Route path="/inventory" element={<><Header /><main><Inventory/></main><Footer /></>} />
+              <Route path="/marketing" element={<><Header /><main><Marketing/></main><Footer /></>} />
+              <Route path="/contact" element={<><Header /><main><Contact/></main><Footer /></>} />
+              <Route path="/ctv" element={<CTVApp />} />
             </Routes>
-          </main>
-          <Footer />
         </div>
       </Router>
     </ThemeProvider>
